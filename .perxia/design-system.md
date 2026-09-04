@@ -7,10 +7,10 @@ Se adopta una identidad propia para el demo llamada **Cuota Clara**, sin logos, 
 ## Fundamentos
 
 - Tipografía: Manrope para interfaz, jerarquías y cifras; DM Mono para metadatos, pasos y valores de referencia.
-- Paleta vigente: fondo negro `#080808`, rojo `#FF334D` para tipografía y jerarquía, verde `#62F58C` para acentos, iconos y acciones; bordes verde oscuro `#26362C`.
+- Paleta vigente: fondo blanco `#FFFFFF`, rojo principal `#FF334D` y rojo de texto `#D81F3A`; bordes rosados `#F1B7C1` y sombras rojas suaves para profundidad.
 - Espaciado: escala 8 / 16 / 24 / 40 px.
-- Superficies: tarjetas blancas con radio 18–22 px; controles con radio 10–14 px; acciones principales con radio 11–12 px.
-- Accesibilidad: contraste AA, foco visible en rosa auxiliar, etiquetas persistentes, dependencias de formulario comunicadas en texto y color.
+- Superficies: blancas con radio 10–22 px; acciones principales rojas con texto blanco y elevación sutil.
+- Accesibilidad: contraste AA, foco visible `#D81F3A`, etiquetas persistentes, dependencias de formulario comunicadas en texto y color.
 
 ## Componentes definidos
 
@@ -27,7 +27,14 @@ El canvas cubre marca, fundamentos, componentes, simulador y estados inicial, ca
 ## Entregable
 
 Canvas: `design/sistema-simulador-credito/canvas.html`.
-Artboards: Marca, Fundamentos, Componentes, Simulador y Estados.
+
+Artboards: Marca, Fundamentos, Componentes, Simulador y Estados. No se detectaron logos ni imágenes del proyecto en `brand/`, `public/`, `assets/` o `src/assets/`; la identidad se expresa como monograma tipográfico `CC`, sin rutas de imagen externas.
+
+## Validación de etapa
+
+- Grafo reutilizado: `graphify-out/graph.json` existente; su comunidad UX relaciona el diseño con la SPA Angular, accesibilidad visual y contratos API sin alterar la arquitectura por capas.
+- `canvas.html` quedó resincronizado con los cinco archivos reales de `artboards/`.
+- La fuente de verdad de tokens es `simulador-libranza-web/src/styles.css`.
 
 ## Pendientes
 

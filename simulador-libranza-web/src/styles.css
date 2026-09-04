@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Material+Icons&display=swap');
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: Manrope, 'Segoe UI', sans-serif;
-  color: #ff334d;
-  background: #080808;
-  --canvas: #080808;
-  --surface: #111411;
-  --surface-raised: #171b17;
-  --ink: #ff334d;
-  --muted: #a7aea9;
-  --accent: #62f58c;
-  --accent-ink: #080808;
-  --border: #26362c;
-  --danger: #ff334d;
-  --focus: #f6ff75;
+  color: #42101a;
+  background: #fff;
+  --canvas: #fff;
+  --surface: #fff;
+  --surface-raised: #fff6f7;
+  --ink: #42101a;
+  --muted: #725b60;
+  --accent: #d81f3a;
+  --accent-hover: #b3132c;
+  --accent-selected: #971024;
+  --on-accent: #fff;
+  --border: #f1b7c1;
+  --disabled: #d9c5c9;
+  --focus: #fff;
+  --focus-on-light: #971024;
 }
 
 * { box-sizing: border-box; }
 body { min-width: 320px; margin: 0; background: var(--canvas); }
 button, input, select { font: inherit; }
 button, a, input, select { -webkit-tap-highlight-color: transparent; }
-button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--focus-on-light); outline-offset: 3px; }
 .material-icons { font-family: 'Material Icons'; font-size: 20px; line-height: 1; vertical-align: middle; }

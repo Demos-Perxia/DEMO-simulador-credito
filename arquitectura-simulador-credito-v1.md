@@ -24,13 +24,13 @@ Incluye el renderizado responsive y accesible de la experiencia, los estados de 
 - Stack vigente: Angular 20, TypeScript, RxJS; ASP.NET Core Web API/.NET 10 y C#.
 - El frontend conserva REST/HTTPS JSON bajo `/api/v1`.
 - Catálogos y políticas están en infraestructura/configuración; no existe base de datos dentro del alcance actual.
-- El Design System es la fuente única: negro `#080808`, rojo `#FF334D`, verde `#62F58C`; cards verdes con texto negro.
+- El Design System es la fuente única: fondo blanco `#FFFFFF`, rojo principal `#FF334D`, rojo de texto `#D81F3A`; las tarjetas rojas usan texto blanco.
 - La HU-01 no altera DTOs, endpoints, reglas, resultados ni mensajes funcionales.
 
 ## Vistas
 
-- Contexto: `arquitectura-contexto-c4-v1.drawio`.
-- Contenedores: `arquitectura-contenedores-c4-v1.drawio`.
+- Contexto: `arquitectura-contexto-c4-v2.drawio`.
+- Contenedores: `arquitectura-contenedores-c4-v2.drawio`.
 
 ## Contratos por capa
 
@@ -116,7 +116,7 @@ Comparar requests/responses antes y después; ejecutar pruebas responsive, naveg
 1. `dotnet test` debe pasar para el dominio y pruebas de integración.
 2. `npm run lint`, `npm run typecheck` y `npm run build` deben pasar.
 3. Las pruebas de frontend deben verificar `GET /catalogs/activities`, `GET /catalogs/activities/{activityId}/agreements` y `POST /credit-simulations` sin cambios contractuales.
-4. Validación visual en desktop y móvil: sin scroll horizontal involuntario, texto negro sobre cards verdes y foco visible.
+4. Validación visual en desktop y móvil: sin scroll horizontal involuntario, texto blanco sobre tarjetas rojas y foco visible.
 
 ## Plan de evolución
 

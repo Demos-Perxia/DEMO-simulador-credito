@@ -1,9 +1,7 @@
 # Historias de usuario
 
-- S3-HU1 — Preparar base técnica: implementada parcialmente. Frontend Angular y backend .NET creados; validación .NET pendiente por SDK local ausente.
-- S3-HU2 — Actividad y convenio dependiente: implementada. API mock y formulario Angular dependiente.
-- S3-HU3 — Simulación por monto: implementada. API y cliente Angular conectados por contrato HTTP.
-- S3-HU4 — Simulación por cuota máxima: implementada. API y modo contextual Angular.
-- S3-HU5 — Resultados, alternativas y avisos: implementada. Selección de alternativa, desglose y avisos de demo.
-- S3-HU6 — Calidad y experiencia: en curso. Build Angular aprobado; faltan pruebas .NET, pruebas Angular automatizadas y recorrido end-to-end.
-- HU-01 — Nuevo look and feel: implementada. La SPA aplica tokens Cuota Clara, estados visuales, semántica y responsive sin modificar contratos, cálculos ni API. Validación final pendiente por Chrome y SDK .NET ausentes.
+| ID | Título | Estado | Criterios clave |
+|---|---|---|---|
+| LF-HU-01 | Reconocer la identidad visual del simulador | validada parcialmente | Fondo blanco, jerarquías rojas, superficies rojas con letra blanca y mensajes con icono; falta ejecutar Karma. |
+| LF-HU-02 | Comparar y seleccionar alternativas de plazo | validada parcialmente | Tarjetas rojas y estado deshabilitado validados; falta respuesta API y selección real. |
+| LF-HU-03 | Operar el look and feel en móvil, escritorio y teclado | validada parcialmente | Reflow a 390 px y selector nativo validados; falta 320 px exactos y teclado real. |

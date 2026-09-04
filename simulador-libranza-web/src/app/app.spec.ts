@@ -104,13 +104,38 @@ describe('App', () => {
     expect(component.selectedAlternative().termInMonths).toBe(60);
   });
 
-  it('marks the selected alternative with an accessible pressed state', () => {
+  it('renders disabled alternatives before a calculation', () => {
+    fixture.detectChanges();
+
+    const plans = Array.from(fixture.nativeElement.querySelectorAll('.plans button')) as HTMLButtonElement[];
+    expect(plans).toHaveSize(5);
+    expect(plans.every(plan => plan.disabled)).toBeTrue();
+  });
+
+  it('binds the native mode selector to the reactive form', () => {
+    const capacityMode = fixture.nativeElement.querySelector('input[value="INSTALLMENT_CAPACITY"]') as HTMLInputElement;
+    capacityMode.click();
+    fixture.detectChanges();
+
+    expect(component.mode()).toBe('INSTALLMENT_CAPACITY');
+    expect(capacityMode.checked).toBeTrue();
+  });
+
+  it('marks the selected alternative with an accessible pressed state and visible label', () => {
     component.result.set(response);
     component.selectedTerm.set(120);
     fixture.detectChanges();
 
     const selectedPlan = fixture.nativeElement.querySelector('.plans button.selected');
     expect(selectedPlan.getAttribute('aria-pressed')).toBe('true');
+    expect(selectedPlan.textContent).toContain('Seleccionado');
+  });
+
+  it('renders an accessible alert when the form is invalid', () => {
+    component.simulate();
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('[role="alert"]').textContent).toContain('Completa actividad');
   });
 
   it('surfaces API validation errors without clearing the form', () => {

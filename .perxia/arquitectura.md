@@ -6,8 +6,8 @@ Se conserva el monolito modular: SPA Angular 20 y API ASP.NET Core/.NET 10 por c
 
 ## Artefactos
 
-- Contexto C4: `arquitectura-contexto-c4-v1.drawio`.
-- Contenedores C4: `arquitectura-contenedores-c4-v1.drawio`.
+- Contexto C4: `arquitectura-contexto-c4-v2.drawio`.
+- Contenedores C4: `arquitectura-contenedores-c4-v2.drawio`.
 - Documento y ADRs: `arquitectura-simulador-credito-v1.md`.
 
 ## Contratos vigentes
@@ -19,4 +19,4 @@ Se conserva el monolito modular: SPA Angular 20 y API ASP.NET Core/.NET 10 por c
 
 ## Riesgos y siguientes pasos
 
-Validar regresión visual y funcional en desktop/móvil, teclado y estados de error; no introducir cambios de backend para el look and feel. Si aparecen catálogos reales, sustituir el adaptador en Infrastructure detrás de los puertos actuales.
+Validar regresión visual y funcional en desktop/móvil, teclado y estados de error; no introducir cambios de backend para el look and feel. Los diagramas v2 corrigen el baseline visual al sistema vigente (fondo blanco, tarjetas rojas y texto blanco) y documentan que no hay identidad, base de datos ni integraciones externas. Si aparecen catálogos reales, sustituir el adaptador en Infrastructure detrás de los puertos actuales.
