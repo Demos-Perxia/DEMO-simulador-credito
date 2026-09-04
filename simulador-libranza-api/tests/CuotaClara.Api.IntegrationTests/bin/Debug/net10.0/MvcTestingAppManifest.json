@@ -1,6 +1,6 @@
 {
-  "CuotaClara.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api",
-  "CuotaClara.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application",
-  "CuotaClara.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain",
-  "CuotaClara.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Infrastructure"
+  "CuotaClara.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api",
+  "CuotaClara.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application",
+  "CuotaClara.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain",
+  "CuotaClara.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Infrastructure"
 }

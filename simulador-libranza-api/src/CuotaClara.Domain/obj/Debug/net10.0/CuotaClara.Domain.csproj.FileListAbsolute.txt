@@ -10,3 +10,15 @@ D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara
 D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\refint\CuotaClara.Domain.dll
 D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.pdb
 D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\ref\CuotaClara.Domain.dll
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.deps.json
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.dll
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.pdb
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.AssemblyInfoInputs.cache
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.AssemblyInfo.cs
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.csproj.CoreCompileInputs.cache
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.sourcelink.json
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.dll
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\refint\CuotaClara.Domain.dll
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.pdb
+F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\ref\CuotaClara.Domain.dll

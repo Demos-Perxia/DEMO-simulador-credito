@@ -3758,19 +3758,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Julian\\.nuget\\packages\\": {}
+    "C:\\Users\\julianbustos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\CuotaClara.Api.IntegrationTests.csproj",
+      "projectUniqueName": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\CuotaClara.Api.IntegrationTests.csproj",
       "projectName": "CuotaClara.Api.IntegrationTests",
-      "projectPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\CuotaClara.Api.IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\Julian\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\obj\\",
+      "projectPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\CuotaClara.Api.IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\julianbustos\\.nuget\\packages\\",
+      "outputPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\tests\\CuotaClara.Api.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Julian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\julianbustos\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -3783,8 +3783,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api\\CuotaClara.Api.csproj": {
-              "projectPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api\\CuotaClara.Api.csproj"
+            "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api\\CuotaClara.Api.csproj": {
+              "projectPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Api\\CuotaClara.Api.csproj"
             }
           }
         }

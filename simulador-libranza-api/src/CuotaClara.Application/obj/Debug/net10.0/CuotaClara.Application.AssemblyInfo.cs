@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CuotaClara.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+409a24148ea3e9c0180f92bd8d80f5df6bf40a57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+339c9b1436aa830ad2e387186484df716c6e2994")]
 [assembly: System.Reflection.AssemblyProductAttribute("CuotaClara.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CuotaClara.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

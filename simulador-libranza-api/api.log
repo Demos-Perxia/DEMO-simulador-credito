@@ -1,0 +1,21 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://127.0.0.1:7040
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Api
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+fail: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      CuotaClara.Domain.Simulation.DomainValidationException: Maximum installment exceeds payment capacity.
+         at CuotaClara.Domain.Simulation.SimulationEngine.Validate(SimulationInput input) in F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\Simulation\SimulationDomain.cs:line 125
+         at CuotaClara.Domain.Simulation.SimulationEngine.Calculate(SimulationInput input) in F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\Simulation\SimulationDomain.cs:line 71
+         at CuotaClara.Application.Simulations.SimulationService.Create(CreateSimulationCommand command) in F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\Simulations\SimulationService.cs:line 20
+         at CuotaClara.Api.Endpoints.ApiEndpoints.<>c.<MapCuotaClaraEndpoints>b__0_2(CreateSimulationRequest request, SimulationService service) in F:\PERXIA\Demos\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Api\Endpoints\ApiEndpoints.cs:line 22
+         at lambda_method4(Closure, Object, HttpContext, Object)
+         at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)

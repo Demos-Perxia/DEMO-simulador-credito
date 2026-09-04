@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj": {}
+    "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj": {
+    "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj",
+        "projectUniqueName": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj",
         "projectName": "CuotaClara.Application",
-        "projectPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj",
-        "packagesPath": "C:\\Users\\Julian\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\obj\\",
+        "projectPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\CuotaClara.Application.csproj",
+        "packagesPath": "C:\\Users\\julianbustos\\.nuget\\packages\\",
+        "outputPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Julian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\julianbustos\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -27,8 +27,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj": {
-                "projectPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj"
+              "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj": {
+                "projectPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj"
               }
             }
           }
@@ -344,17 +344,17 @@
         }
       }
     },
-    "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj": {
+    "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj",
+        "projectUniqueName": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj",
         "projectName": "CuotaClara.Domain",
-        "projectPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj",
-        "packagesPath": "C:\\Users\\Julian\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\Perxia\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\obj\\",
+        "projectPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\CuotaClara.Domain.csproj",
+        "packagesPath": "C:\\Users\\julianbustos\\.nuget\\packages\\",
+        "outputPath": "F:\\PERXIA\\Demos\\DEMO-simulador-credito\\simulador-libranza-api\\src\\CuotaClara.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Julian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\julianbustos\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

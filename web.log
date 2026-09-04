@@ -1,0 +1,9 @@
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path F:\PERXIA\Demos\DEMO-simulador-credito\package.json
+npm ERR! errno -4058
+npm ERR! enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'F:\PERXIA\Demos\DEMO-simulador-credito\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in: C:\Users\julianbustos\AppData\Local\npm-cache\_logs\2026-09-04T13_13_31_550Z-debug-0.log
