@@ -7,7 +7,7 @@ Se adopta una identidad propia para el demo llamada **Cuota Clara**, sin logos, 
 ## Fundamentos
 
 - Tipografía: Manrope para interfaz, jerarquías y cifras; DM Mono para metadatos, pasos y valores de referencia.
-- Paleta: Medianoche `#172033`, auxiliar `#E71850` para títulos, botones y header, púrpura `#7835C3` para iconos, Rosa suave `#FFF0F4`, Niebla `#F7F8FA`, Alerta `#C94855`.
+- Paleta vigente: fondo negro `#080808`, rojo `#FF334D` para tipografía y jerarquía, verde `#62F58C` para acentos, iconos y acciones; bordes verde oscuro `#26362C`.
 - Espaciado: escala 8 / 16 / 24 / 40 px.
 - Superficies: tarjetas blancas con radio 18–22 px; controles con radio 10–14 px; acciones principales con radio 11–12 px.
 - Accesibilidad: contraste AA, foco visible en rosa auxiliar, etiquetas persistentes, dependencias de formulario comunicadas en texto y color.
@@ -18,16 +18,16 @@ Botones primario, secundario y deshabilitado; selector de perfil; campo monetari
 
 ## Referencia funcional aplicada
 
-Se tomó como referencia el simulador de crédito de libranza proporcionado por el usuario. Se conservaron la jerarquía introductoria, los indicadores de monto/cuota, el flujo de actividad → convenio → ingresos y descuentos → monto → tasa EA → plazo, la tarjeta de cuota, el detalle del crédito, las alternativas de 120/108/96/72/60 meses y las notas legales visibles. Se mantuvo identidad, logo, nombre y copy propios del demo; no se copiaron activos ni marca de Banco Finandina.
+Se conserva la jerarquía introductoria, los indicadores de monto/cuota, el flujo de actividad → convenio → ingresos y descuentos → monto → tasa EA → plazo, la tarjeta de cuota, el detalle del crédito, las alternativas de 120/108/96/72/60 meses y las notas legales visibles. Se mantiene identidad, logo y copy propios del demo; no se usan activos ni marca del referente.
 
-## Mockup principal
+## Mockups y estados
 
-El flujo inicia con actividad, continúa con convenio e ingresos/descuentos, monto, tasa y plazo; comunica que el resultado es estimado, no una aprobación. El mockup recalcula la cuota estimada con cuota fija para 120, 108, 96, 72 y 60 meses, y expone ingreso mensual, monto solicitado, plazo elegido y cuota mensual. Las cifras de ejemplo son datos sintéticos y no condiciones comerciales.
+El canvas cubre marca, fundamentos, componentes, simulador y estados inicial, cargando, error y resultado seleccionado. Los estados mantienen contexto y una acción clara; los resultados se comunican como estimados, sujetos a validación y sin incluir prima de seguro de vida.
 
 ## Entregable
 
 Canvas: `design/sistema-simulador-credito/canvas.html`.
-Artboards: Marca, Fundamentos, Componentes y Mockup del Simulador.
+Artboards: Marca, Fundamentos, Componentes, Simulador y Estados.
 
 ## Pendientes
 

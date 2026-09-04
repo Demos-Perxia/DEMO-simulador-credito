@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Material+Icons&display=swap');
 
-:root { color-scheme: light; font-family: Manrope, 'Segoe UI', sans-serif; color: #172033; background: #f7f8fa; }
+:root {
+  color-scheme: dark;
+  font-family: Manrope, 'Segoe UI', sans-serif;
+  color: #ff334d;
+  background: #080808;
+  --canvas: #080808;
+  --surface: #111411;
+  --surface-raised: #171b17;
+  --ink: #ff334d;
+  --muted: #a7aea9;
+  --accent: #62f58c;
+  --accent-ink: #080808;
+  --border: #26362c;
+  --danger: #ff334d;
+  --focus: #f6ff75;
+}
+
 * { box-sizing: border-box; }
-body { margin: 0; background: #f7f8fa; }
+body { min-width: 320px; margin: 0; background: var(--canvas); }
 button, input, select { font: inherit; }
+button, a, input, select { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .material-icons { font-family: 'Material Icons'; font-size: 20px; line-height: 1; vertical-align: middle; }

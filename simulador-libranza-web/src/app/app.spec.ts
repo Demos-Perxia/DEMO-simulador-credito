@@ -54,13 +54,18 @@ describe('App', () => {
   });
 
   it('loads activities and reloads compatible agreements when activity changes', () => {
+    expect(fixture.nativeElement.querySelector('[formControlName="agreementId"]').disabled).toBeTrue();
+    expect(fixture.nativeElement.querySelector('#agreement-help').textContent).toContain('Primero selecciona una actividad');
+
     component.form.controls.activityId.setValue('teacher');
     const request = http.expectOne(`${apiBase}/catalogs/activities/teacher/agreements`);
     expect(request.request.method).toBe('GET');
     request.flush(agreements);
+    fixture.detectChanges();
 
     expect(component.agreements()).toEqual(agreements);
     expect(component.form.controls.agreementId.enabled).toBeTrue();
+    expect(fixture.nativeElement.querySelector('#agreement-help').textContent).toContain('Selecciona el convenio');
   });
 
   it('switches mode, clears the obsolete target, and invalidates current results', () => {
@@ -73,7 +78,7 @@ describe('App', () => {
     expect(component.mode()).toBe('INSTALLMENT_CAPACITY');
     expect(component.form.controls.requestedAmountCop.value).toBeNull();
     expect(component.result()).toBeNull();
-    expect(component.planValueLabel()).toBe('Capacidad máxima');
+    expect(component.planValueLabel()).toBe('Monto estimado');
   });
 
   it('submits an amount simulation and selects an alternative from the API response', () => {
@@ -97,6 +102,15 @@ describe('App', () => {
     expect(component.selectedAlternative().termInMonths).toBe(120);
     component.selectAlternative(response.alternatives[0]);
     expect(component.selectedAlternative().termInMonths).toBe(60);
+  });
+
+  it('marks the selected alternative with an accessible pressed state', () => {
+    component.result.set(response);
+    component.selectedTerm.set(120);
+    fixture.detectChanges();
+
+    const selectedPlan = fixture.nativeElement.querySelector('.plans button.selected');
+    expect(selectedPlan.getAttribute('aria-pressed')).toBe('true');
   });
 
   it('surfaces API validation errors without clearing the form', () => {

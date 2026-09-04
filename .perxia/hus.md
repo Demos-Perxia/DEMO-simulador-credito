@@ -6,3 +6,4 @@
 - S3-HU4 — Simulación por cuota máxima: implementada. API y modo contextual Angular.
 - S3-HU5 — Resultados, alternativas y avisos: implementada. Selección de alternativa, desglose y avisos de demo.
 - S3-HU6 — Calidad y experiencia: en curso. Build Angular aprobado; faltan pruebas .NET, pruebas Angular automatizadas y recorrido end-to-end.
+- HU-01 — Nuevo look and feel: implementada. La SPA aplica tokens Cuota Clara, estados visuales, semántica y responsive sin modificar contratos, cálculos ni API. Validación final pendiente por Chrome y SDK .NET ausentes.

@@ -6,40 +6,40 @@
 <main id="simulador" class="page-shell">
   <section class="hero" aria-labelledby="page-title">
     <div class="hero-art" aria-hidden="true">₡</div>
-    <div><h1 id="page-title">Simulador de crédito libranza</h1><p>Con Cuota Clara, tu nómina es tu mejor garantía.</p></div>
+    <div><p class="eyebrow">Crédito de libranza</p><h1 id="page-title">Simulador de crédito libranza</h1><p>Con Cuota Clara, tu nómina es tu mejor garantía.</p></div>
   </section>
 
   <section class="simulator" aria-label="Simulador de crédito">
     <form class="card form-card" [formGroup]="form" (ngSubmit)="simulate()" novalidate>
-      <div><h2>Bienvenido al camino financiero más fácil</h2><p class="intro">Solución ideal para alcanzar tus metas, usando tu salario como tu mejor aliado.</p></div>
+      <div><p class="eyebrow">Paso 1 de 3</p><h2>Calcula una cuota a tu medida</h2><p class="intro">Usa tu salario como aliado para alcanzar tus metas.</p></div>
       <div class="mode-tabs" role="tablist" aria-label="Modo de simulación">
         <button type="button" role="tab" [attr.aria-selected]="mode() === 'AMOUNT'" [class.selected]="mode() === 'AMOUNT'" (click)="selectMode('AMOUNT')"><span class="material-icons">calculate</span>Monto</button>
         <button type="button" role="tab" [attr.aria-selected]="mode() === 'INSTALLMENT_CAPACITY'" [class.selected]="mode() === 'INSTALLMENT_CAPACITY'" (click)="selectMode('INSTALLMENT_CAPACITY')"><span class="material-icons">check_circle</span>Cuota</button>
       </div>
 
       <div class="fields">
-        <label><span class="field-label"><span class="material-icons">person</span>¿Cuál es tu actividad?</span><select formControlName="activityId"><option value="">Selecciona...</option>@for (activity of activities(); track activity.id) {<option [value]="activity.id">{{ activity.name }}</option>}</select></label>
-        <label><span class="field-label"><span class="material-icons">business</span>¿Cuál es el convenio?</span><select formControlName="agreementId"><option value="">{{ loadingAgreements() ? 'Cargando convenios...' : 'Selecciona...' }}</option>@for (agreement of agreements(); track agreement.id) {<option [value]="agreement.id">{{ agreement.name }}</option>}</select></label>
+        <label><span class="field-label"><span class="material-icons">person</span>¿Cuál es tu actividad?</span><select formControlName="activityId" aria-describedby="activity-help"><option value="">Selecciona...</option>@for (activity of activities(); track activity.id) {<option [value]="activity.id">{{ activity.name }}</option>}</select><small id="activity-help">Elige tu actividad para conocer los convenios disponibles.</small></label>
+        <label><span class="field-label"><span class="material-icons">business</span>¿Cuál es el convenio?</span><select formControlName="agreementId" aria-describedby="agreement-help"><option value="">{{ loadingAgreements() ? 'Cargando convenios...' : 'Selecciona...' }}</option>@for (agreement of agreements(); track agreement.id) {<option [value]="agreement.id">{{ agreement.name }}</option>}</select><small id="agreement-help">@if (loadingAgreements()) { Estamos cargando los convenios compatibles. } @else if (form.controls.agreementId.disabled) { Primero selecciona una actividad. } @else { Selecciona el convenio asociado a tu actividad. }</small></label>
         <div class="two-fields">
-          <label><span class="field-label"><span class="material-icons">attach_money</span>Ingresos mensuales</span><input type="text" [value]="formatCurrency(form.controls.monthlyIncomeCop.value)" (input)="updateCurrency('monthlyIncomeCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric"></label>
-          <label><span class="field-label"><span class="material-icons">remove_circle</span>Descuentos de nómina</span><input type="text" [value]="formatCurrency(form.controls.payrollDeductionsCop.value)" (input)="updateCurrency('payrollDeductionsCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric"></label>
+          <label><span class="field-label"><span class="material-icons">attach_money</span>Ingresos mensuales</span><input type="text" aria-label="Ingresos mensuales" [value]="formatCurrency(form.controls.monthlyIncomeCop.value)" (input)="updateCurrency('monthlyIncomeCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric"></label>
+          <label><span class="field-label"><span class="material-icons">remove_circle</span>Descuentos de nómina</span><input type="text" aria-label="Descuentos de nómina" [value]="formatCurrency(form.controls.payrollDeductionsCop.value)" (input)="updateCurrency('payrollDeductionsCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric"></label>
         </div>
-        <label><span class="field-label"><span class="material-icons">payments</span>{{ targetLabel() }}</span>@if (mode() === 'AMOUNT') {<input type="text" [value]="formatCurrency(form.controls.requestedAmountCop.value)" (input)="updateCurrency('requestedAmountCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric">} @else {<input type="text" [value]="formatCurrency(form.controls.maximumInstallmentCop.value)" (input)="updateCurrency('maximumInstallmentCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric">}</label>
+        <label><span class="field-label"><span class="material-icons">payments</span>{{ targetLabel() }}</span>@if (mode() === 'AMOUNT') {<input type="text" [attr.aria-label]="targetLabel()" [value]="formatCurrency(form.controls.requestedAmountCop.value)" (input)="updateCurrency('requestedAmountCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric">} @else {<input type="text" [attr.aria-label]="targetLabel()" [value]="formatCurrency(form.controls.maximumInstallmentCop.value)" (input)="updateCurrency('maximumInstallmentCop', $event)" placeholder="$ Ingresa el valor" inputmode="numeric">}</label>
       </div>
-      @if (error()) {<div class="alert" role="alert">{{ error() }} <button type="button" (click)="retryActivities()">Reintentar</button></div>}
-      <button class="primary" type="submit" [disabled]="loading()">{{ loading() ? 'Calculando…' : 'Calcular alternativas' }}</button>
+      @if (error()) {<div class="alert" role="alert" aria-live="assertive"><span class="material-icons" aria-hidden="true">error</span><div>{{ error() }} <button type="button" (click)="retryActivities()">Reintentar</button></div></div>}
+      <button class="primary" type="submit" [disabled]="loading()"><span class="material-icons" aria-hidden="true">{{ loading() ? 'progress_activity' : 'arrow_forward' }}</span>{{ loading() ? 'Calculando alternativas…' : 'Calcular alternativas' }}</button>
     </form>
 
     <aside class="card result-card" [class.capacity-mode]="mode() === 'INSTALLMENT_CAPACITY'" aria-live="polite">
-      <div class="result-head"><div><p class="eyebrow">Resultado estimado</p><h2>Detalles del crédito</h2></div><span class="rate">18 % EA</span></div>
+      <div class="result-head"><div><p class="eyebrow">@if (loading()) { Calculando } @else if (result()) { Resultado estimado } @else { Tu proyección }</p><h2>Detalles del crédito</h2></div><span class="rate">18 % EA</span></div>
       <div class="summary">
         <div><span>Ingresos</span><strong>{{ (form.controls.monthlyIncomeCop.value || 0) | currency:'COP':'symbol-narrow':'1.0-0' }}</strong></div>
         <div><span>{{ planValueLabel() }}</span><strong>@if (selectedAlternative(); as alternative) { {{ alternativeValue()(alternative) | currency:'COP':'symbol-narrow':'1.0-0' }} } @else { {{ result()?.maximumPaymentCapacityCop || 0 | currency:'COP':'symbol-narrow':'1.0-0' }} }</strong></div>
       </div>
-      <p class="plan-intro">Selecciona el plan de pagos de tu préstamo en línea.</p>
-      <div class="plans" role="list">
+      <p class="plan-intro">@if (loading()) { Estamos preparando tus alternativas. } @else { Selecciona el plazo que mejor se ajusta a ti. }</p>
+      <div class="plans" role="list" aria-label="Alternativas de plazo">
         @for (alternative of displayedAlternatives(); track alternative.termInMonths) {
-          <button type="button" role="listitem" [class.selected]="selectedTerm() === alternative.termInMonths" [disabled]="!result()" (click)="selectAlternative(alternative)"><span class="term">{{ alternative.termInMonths }} meses</span><span class="plan-line"><small>{{ planValueLabel() }}</small><strong>{{ alternativeValue()(alternative) | currency:'COP':'symbol-narrow':'1.0-0' }}</strong></span></button>
+          <button type="button" role="listitem" [class.selected]="selectedTerm() === alternative.termInMonths" [disabled]="!result()" [attr.aria-pressed]="selectedTerm() === alternative.termInMonths" (click)="selectAlternative(alternative)"><span class="term">{{ alternative.termInMonths }} meses</span><span class="plan-line"><small>{{ planValueLabel() }}</small><strong>{{ alternativeValue()(alternative) | currency:'COP':'symbol-narrow':'1.0-0' }}</strong></span></button>
         }
       </div>
       @if (selectedAlternative(); as alternative) {<dl class="breakdown"><div><dt>Monto</dt><dd>{{ alternative.amountCop | currency:'COP':'symbol-narrow':'1.0-0' }}</dd></div><div><dt>Cuota</dt><dd>{{ alternative.monthlyInstallmentCop | currency:'COP':'symbol-narrow':'1.0-0' }}</dd></div><div><dt>Total estimado</dt><dd>{{ alternative.totalEstimatedCop | currency:'COP':'symbol-narrow':'1.0-0' }}</dd></div><div><dt>Intereses estimados</dt><dd>{{ alternative.estimatedInterestCop | currency:'COP':'symbol-narrow':'1.0-0' }}</dd></div></dl>}
