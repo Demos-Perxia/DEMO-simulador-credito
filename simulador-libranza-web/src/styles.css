@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Material+Icons&display=swap');
+
+:root { color-scheme: light; font-family: Manrope, 'Segoe UI', sans-serif; color: #172033; background: #f7f8fa; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fa; }
+button, input, select { font: inherit; }
+.material-icons { font-family: 'Material Icons'; font-size: 20px; line-height: 1; vertical-align: middle; }

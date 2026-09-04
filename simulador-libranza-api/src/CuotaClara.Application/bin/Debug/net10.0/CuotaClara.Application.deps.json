@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "CuotaClara.Application/1.0.0": {
+        "dependencies": {
+          "CuotaClara.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CuotaClara.Application.dll": {}
+        }
+      },
+      "CuotaClara.Domain/1.0.0": {
+        "runtime": {
+          "CuotaClara.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CuotaClara.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CuotaClara.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

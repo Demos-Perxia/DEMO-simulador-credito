@@ -1,0 +1,16 @@
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\bin\Debug\net10.0\CuotaClara.Application.deps.json
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\bin\Debug\net10.0\CuotaClara.Application.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\bin\Debug\net10.0\CuotaClara.Application.pdb
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\bin\Debug\net10.0\CuotaClara.Domain.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\bin\Debug\net10.0\CuotaClara.Domain.pdb
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.csproj.AssemblyReference.cache
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.AssemblyInfoInputs.cache
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.AssemblyInfo.cs
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.csproj.CoreCompileInputs.cache
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.sourcelink.json
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaCla.4300911C.Up2Date
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\refint\CuotaClara.Application.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\CuotaClara.Application.pdb
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Application\obj\Debug\net10.0\ref\CuotaClara.Application.dll

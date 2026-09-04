@@ -1,0 +1,162 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mockup · Simulador de libranza</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><style>:root{--aux:#e71850;--icon:#7835c3;--ink:#172033;--muted:#62708a;--line:#dde3eb;--surface:#f3f5f7}body{margin:0;background:var(--surface)}*{box-sizing:border-box}input,select{width:100%;font:600 14px Manrope,sans-serif;color:var(--ink);outline:none;background:#fff}input:focus,select:focus{border-color:var(--aux)!important;box-shadow:0 0 0 3px #fce1e9}.field{display:flex;flex-direction:column;gap:8px}.field label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800}.field input,.field select{height:47px;border:1.5px solid #d5dce6;border-radius:10px;padding:0 14px}.label-icon{width:20px;height:20px;padding:4px;border-radius:6px;background:#f1eff9;color:var(--icon);flex:none}.plans button{display:flex;width:100%;justify-content:space-between;align-items:center;padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);font:700 13px Manrope,sans-serif;cursor:pointer}.plans button.active{border:1.5px solid var(--aux);background:#fff0f4;color:var(--aux)}.button{border:0;background:var(--aux);color:#fff;border-radius:11px;padding:14px 25px;font:800 14px Manrope,sans-serif;cursor:pointer}.icon{color:var(--icon)}</style></head><body style="margin:0;background:#f7f8fa"><div style="width:100vw;min-height:100vh;background:#f7f8fa;color:#172033;font-family:Manrope,sans-serif">
+<!-- HEADER GRIS BANCO REF   - NO LOGO real, solo bloque visible -->
+<div style="width:100vw;height:64px;background:#fafafd;box-shadow:0 1.5px 6px 0 #e5e5e5;display:flex;align-items:center;justify-content:space-between;padding:0 44px 0 24px;position:relative;z-index:10;">
+  <div style="display:flex;align-items:center;gap:14px;">
+    <div style="width:38px;height:38px;background:#fff0f4;border-radius:12px;display:grid;place-items:center;font-weight:800;color:#e71850;font-size:22px;">CC</div>
+    <span style="font-size:18px;font-weight:800;color:#7835c3;letter-spacing:.05em">Cuota Clara</span>
+  </div>
+  <nav style="display:flex;gap:10px;font:600 16px Manrope,sans-serif;">
+    <span style="color:#e71850;background:#fff0f4;border-radius:16px;padding:7px 18px">Personas</span>
+    <span style="color:#b0b1b3;padding:7px 10px">Empresas</span>
+  </nav>
+</div>
+<!-- HERO -->
+<div style="max-width:940px;margin:36px auto 0 auto;display:flex;flex-direction:column;gap:24px;align-items:center;">
+  <div style="width:100%;border-radius:14px;overflow:hidden;background:#fff;height:133px;display:flex;align-items:center;position:relative;border:1px solid #e3e7f0;box-shadow:0 2px 24px 0 rgba(108,112,132,.10);">
+    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=940&q=80" alt="Simulador" style="height:100%;width:238px;object-fit:cover;filter:brightness(0.99) grayscale(0.20);border-right:1px solid #eceef1;">
+    <div style="padding:24px 36px;display:flex;flex-direction:column;justify-content:center;gap:10px;">
+      <div style="font:700 26px Manrope,sans-serif;letter-spacing:-.02em;line-height:1.22;">Simulador de crédito libranza</div>
+      <div style="font:400 15px Manrope,sans-serif;color:#62708a;line-height:1.35;">Con Cuota Clara, tu nómina es tu mejor garantía.</div>
+    </div>
+    
+  </div>
+
+<!-- CONTENIDO PRINCIPAL: 2 COLUMNAS -->
+<div style="width:100%;display:grid;grid-template-columns:1.22fr 1fr;gap:26px;margin:36px auto 0;">
+  <!-- Columna Izquierda: Formulario -->
+  <div style="background:#fff;border:1.5px solid #eaeaea;padding:36px 34px 38px 34px;border-radius:18px;min-height:530px;box-shadow:0 2px 24px 0 rgba(68,78,124,.07);display:flex;flex-direction:column;gap:22px;">
+    <div style="font-size:22px;font-weight:800;color:#172033;margin-bottom:4px">Bienvenido al camino financiero más fácil</div>
+    <div style="font-size:15px;color:#717987;margin-bottom:14px;">Solución ideal para alcanzar tus metas, usando tu salario como tu mejor aliado.</div>
+    <div style="display:flex;gap:8px;margin-bottom:8px;">
+      <button id="tab-monto" style="flex:1;background:#fff0f4;border:0;color:#e71850;padding:12px 0;border-radius:8px 8px 0 0;font:700 15px Manrope,sans-serif" onclick="setCuotaTab(this, false)"><span class='material-icons' style='font-size:18px;vertical-align:middle;margin-right:7px;'>calculate</span>Monto</button>
+      <button id="tab-cuota" style="flex:1;background:#fff;border:0;color:#b0b1b3;padding:12px 0;border-radius:8px 8px 0 0;font:700 15px Manrope,sans-serif" onclick="setCuotaTab(this, true)"><span class='material-icons' style='font-size:18px;vertical-align:middle;margin-right:7px;'>check_circle</span>Cuota</button>
+<script>function setCuotaTab(b, showMax){
+  document.getElementById('tab-monto').style.background=showMax?'#fff':'#fff0f4';
+  document.getElementById('tab-monto').style.color=showMax?'#b0b1b3':'#e71850';
+  document.getElementById('tab-cuota').style.background=showMax?'#fff0f4':'#fff';
+  document.getElementById('tab-cuota').style.color=showMax?'#e71850':'#b0b1b3';
+  // Detalle texto dinámico
+  let txt = showMax ? 'Capacidad máxima' : 'Cuota máxima';
+  let icon = showMax ? 'trending_up' : 'payments';
+  for(let m of document.getElementsByClassName('detalle-lbl')) 
+    m.innerHTML = txt;
+  for(let msg of document.getElementsByClassName('cuota-mensaje'))
+    msg.innerHTML = showMax ? '<span class="material-icons" style="color:#7835c3;margin-right:6px;vertical-align:middle;">trending_up</span>Capacidad máxima' : '<span class="material-icons" style="color:#7835c3;margin-right:6px;vertical-align:middle;">payments</span>Cuota máxima';
+}
+window.onload = function(){ setCuotaTab(document.getElementById('tab-monto'), false); }
+</script>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;margin-top:4px;">
+      <label style="font:600 14px Manrope,sans-serif;color:#555555;display:flex;align-items:center;gap:7px;margin-bottom:4px;">
+        <span style="display:flex;align-items:center;"><span class="material-icons" style="font-size:20px;color:#7835c3;margin-right:4px;">person</span>¿Cuál es tu actividad?</span>
+      </label>
+      <select style="margin-top:0;height:47px;border-radius:10px;border:1px solid #e6e8ec;font:600 14px Manrope,sans-serif;padding:0 13px;color:#555555;">
+        <option value="">Selecciona...</option>
+        <option>Docente</option>
+        <option>Pensionado</option>
+      </select>
+
+      <label style="font:600 14px Manrope,sans-serif;color:#555555;display:flex;align-items:center;gap:7px;margin:16px 0 4px 0;">
+        <span style="display:flex;align-items:center;"><span class="material-icons" style="font-size:20px;color:#7835c3;margin-right:4px;">business</span>¿Cuál es el convenio?</span>
+      </label>
+      <select style="margin-top:0;height:47px;border-radius:10px;border:1px solid #e6e8ec;font:600 14px Manrope,sans-serif;padding:0 13px;color:#555555;">
+        <option value="">Selecciona...</option>
+        <option>Secretaría de Educación de Antioquia</option>
+        <option>Secretaría de Educación de Bogotá</option>
+        <option>Secretaría de Educación de Atlántico</option>
+        <option>Secretaría de Educación de Valle</option>
+        <option>Secretaría de Educación de Cundinamarca</option>
+        <option>Secretaría de Educación de Santander</option>
+        <option>Secretaría de Educación de Boyacá</option>
+        <option>Secretaría de Educación de Cartagena</option>
+        <option>Secretaría de Educación de Nariño</option>
+        <option>Secretaría de Educación de Quindío</option>
+        <option>Secretaría de Educación de Casanare</option>
+      </select>
+
+      <label style="font:600 14px Manrope,sans-serif;color:#555555;display:flex;align-items:center;gap:7px;margin:16px 0 4px 0;">
+        <span style="display:flex;align-items:center;"><span class="material-icons" style="font-size:20px;color:#7835c3;margin-right:4px;">attach_money</span>Ingresos mensuales</span>
+      </label>
+      <input style="margin-top:0;height:47px;border-radius:10px;border:1px solid #e6e8ec;font:600 14px Manrope,sans-serif;padding:0 13px;color:#555555;" type="number" placeholder="$ Ingresa el valor"/>
+
+      <label style="font:600 14px Manrope,sans-serif;color:#555555;display:flex;align-items:center;gap:7px;margin:16px 0 4px 0;">
+        <span style="display:flex;align-items:center;"><span class="material-icons" style="font-size:20px;color:#7835c3;margin-right:4px;">remove_circle</span>Descuentos de nómina</span>
+      </label>
+      <input style="margin-top:0;height:47px;border-radius:10px;border:1px solid #e6e8ec;font:600 14px Manrope,sans-serif;padding:0 13px;color:#555555;" type="number" placeholder="$ Ingresa el valor"/>
+
+      <label style="font:600 14px Manrope,sans-serif;color:#555555;display:flex;align-items:center;gap:7px;margin:16px 0 4px 0;">
+        <span style="display:flex;align-items:center;"><span class="material-icons" style="font-size:20px;color:#7835c3;margin-right:4px;">payments</span>Monto solicitado crédito</span>
+      </label>
+      <input style="margin-top:0;height:47px;border-radius:10px;border:1px solid #e6e8ec;font:600 14px Manrope,sans-serif;padding:0 13px;color:#555555;" type="number" placeholder="$ Ingresa el valor"/>
+    </div>
+  </div>
+
+  <!-- Columna Derecha: Detalle resultado y plazos -->
+  <div style="background:#fff;border:1.5px solid #eaeaea;padding:32px 32px 24px 32px;border-radius:18px;min-height:530px;box-shadow:0 2px 24px 0 rgba(68,78,124,.07);display:flex;flex-direction:column;gap:22px;">
+    <div style="font-size:18px;font-weight:800;color:#172033;margin-bottom:6px">Detalles del crédito</div>
+    <div style="display:flex;gap:18px;align-items:center;margin-bottom:18px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px 18px;margin-bottom:20px;width:100%;">
+  <div style="background:#fff;border:1.7px solid #eceef1;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:10px;width:100%;">
+    <span class="material-icons" style="color:#7835c3;font-size:21px;">savings</span>
+    <span style="color:#555555;font:700 15px Manrope,sans-serif;">Ingresos</span>
+    <span style="flex:1"></span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;">$0</span>
+  </div>
+  <div style="background:#fff;border:1.7px solid #eceef1;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:10px;width:100%;">
+    <span class="material-icons" style="color:#7835c3;font-size:21px;">payments</span>
+    <span style="color:#555555;font:700 15px Manrope,sans-serif;">Cuota mensual</span>
+    <span style="flex:1"></span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;">$0</span>
+  </div>
+</div>
+    </div>
+    <div style="font:600 13px Manrope,sans-serif;color:#62708a;margin-bottom:9px">Selecciona el plan de pagos de tu préstamo en línea.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px;">
+  <div style="grid-column:1/3;">
+    <button style="width:100%;display:grid;grid-template-rows:auto auto;grid-template-columns:100%;align-items:center;padding:16px 18px 12px 18px;background:#fff;border:2.1px solid #e71850;border-radius:12px;box-shadow:0 0 0 2px #ffe5f2 inset;font:800 16px Manrope,sans-serif;color:#e71850;margin-bottom:2px;">
+  <span style="display:flex;align-items:center;font-weight:800;font-size:18px;font-family:Manrope,sans-serif;color:#555555;justify-content:flex-start;"><span class="material-icons" style="color:#7835c3;font-size:22px;margin-right:8px;">calendar_month</span>120 meses</span>
+  <span style="display:flex;align-items:center;gap:24px;margin-top:7px;">
+    <span class="detalle-lbl" style="color:#b08db8;font:600 13px DM Mono,monospace;margin-left:30px;">Capacidad máxima</span>
+    <span style="color:#555555;font:800 20px DM Mono,monospace;text-align:right;margin-left:auto">$0</span>
+  </span>
+</button>
+  </div>
+  <button style="width:100%;display:grid;grid-template-rows:auto auto;grid-template-columns:100%;align-items:center;padding:14px 17px 8px 17px;background:#fff;border:1.5px solid #e1d6ee;border-radius:12px;font:700 15px Manrope,sans-serif;color:#9663a0;margin-bottom:2px;">
+  <span style="display:flex;align-items:center;font-weight:800;font-size:16.7px;font-family:Manrope,sans-serif;color:#555555;"><span class="material-icons" style="color:#7835c3;font-size:20px;margin-right:7px;">calendar_month</span>108 meses</span>
+  <span style="display:flex;align-items:center;gap:24px;margin-top:6px;">
+    <span class="detalle-lbl" style="color:#b08db8;font:600 12px DM Mono,monospace;margin-left:30px;">Capacidad máxima</span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;text-align:right;margin-left:auto">$0</span>
+  </span>
+</button>
+  <button style="width:100%;display:grid;grid-template-rows:auto auto;grid-template-columns:100%;align-items:center;padding:14px 17px 8px 17px;background:#fff;border:1.5px solid #e1d6ee;border-radius:12px;font:700 15px Manrope,sans-serif;color:#9663a0;margin-bottom:2px;">
+  <span style="display:flex;align-items:center;font-weight:800;font-size:16.7px;font-family:Manrope,sans-serif;color:#555555;"><span class="material-icons" style="color:#7835c3;font-size:20px;margin-right:7px;">calendar_month</span>96 meses</span>
+  <span style="display:flex;align-items:center;gap:24px;margin-top:6px;">
+    <span class="detalle-lbl" style="color:#b08db8;font:600 12px DM Mono,monospace;margin-left:30px;">Capacidad máxima</span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;text-align:right;margin-left:auto">$0</span>
+  </span>
+</button>
+  <button style="width:100%;display:grid;grid-template-rows:auto auto;grid-template-columns:100%;align-items:center;padding:14px 17px 8px 17px;background:#fff;border:1.5px solid #e1d6ee;border-radius:12px;font:700 15px Manrope,sans-serif;color:#9663a0;margin-bottom:2px;">
+  <span style="display:flex;align-items:center;font-weight:800;font-size:16.7px;font-family:Manrope,sans-serif;color:#555555;"><span class="material-icons" style="color:#7835c3;font-size:20px;margin-right:7px;">calendar_month</span>72 meses</span>
+  <span style="display:flex;align-items:center;gap:24px;margin-top:6px;">
+    <span class="detalle-lbl" style="color:#b08db8;font:600 12px DM Mono,monospace;margin-left:30px;">Capacidad máxima</span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;text-align:right;margin-left:auto">$0</span>
+  </span>
+</button>
+  <button style="width:100%;display:grid;grid-template-rows:auto auto;grid-template-columns:100%;align-items:center;padding:14px 17px 8px 17px;background:#fff;border:1.5px solid #e1d6ee;border-radius:12px;font:700 15px Manrope,sans-serif;color:#9663a0;margin-bottom:2px;">
+  <span style="display:flex;align-items:center;font-weight:800;font-size:16.7px;font-family:Manrope,sans-serif;color:#555555;"><span class="material-icons" style="color:#7835c3;font-size:20px;margin-right:7px;">calendar_month</span>60 meses</span>
+  <span style="display:flex;align-items:center;gap:24px;margin-top:6px;">
+    <span class="detalle-lbl" style="color:#b08db8;font:600 12px DM Mono,monospace;margin-left:30px;">Capacidad máxima</span>
+    <span style="color:#555555;font:800 16px DM Mono,monospace;text-align:right;margin-left:auto">$0</span>
+  </span>
+</button>
+</div>
+    <button style="margin-top:16px;width:100%;background:linear-gradient(90deg,#e71850 0%,#d376ad 100%);color:#fff;border-radius:12px;padding:16px 0;font:800 15px Manrope,sans-serif;border:0;font-size:15px;opacity:0.55">Solicitar crédito</button>
+  </div>
+</div>
+
+<!-- Legal y pie -->
+<div style="font:500 11px DM Mono,monospace;color:#b0b1b3;margin:54px auto 0 auto;text-align:center;max-width:870px;line-height:1.7">Los valores descritos en el presente simulador son informativos, se encuentran sujetos a la solicitud formal de crédito realizada por el cliente a Cuota Clara demo. El valor de cuota propuesta no incluye valor de prima mensual de seguro de vida.<br>La tasa mostrada es de referencia y depende del perfil y convenio. Demo para fines de experiencia digital.</div>
+
+</div>
+<!-- FIN CONTENIDO -->

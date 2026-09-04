@@ -1,0 +1,12 @@
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.deps.json
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\bin\Debug\net10.0\CuotaClara.Domain.pdb
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.AssemblyInfoInputs.cache
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.AssemblyInfo.cs
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.csproj.CoreCompileInputs.cache
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.sourcelink.json
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\refint\CuotaClara.Domain.dll
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\CuotaClara.Domain.pdb
+D:\Proyectos\Perxia\DEMO-simulador-credito\simulador-libranza-api\src\CuotaClara.Domain\obj\Debug\net10.0\ref\CuotaClara.Domain.dll
